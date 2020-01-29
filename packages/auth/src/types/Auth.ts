@@ -50,7 +50,6 @@ export interface AuthOptions {
 	authenticationFlowType?: string;
 	identityPoolRegion?: string;
 	clientMetadata?: any;
-	endpoint?: string;
 	fipsEnabled?: boolean;
 }
 
