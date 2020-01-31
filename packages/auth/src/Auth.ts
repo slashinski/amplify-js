@@ -178,6 +178,7 @@ export default class AuthClass {
 			const userPoolData: ICognitoUserPoolData = {
 				UserPoolId: userPoolId,
 				ClientId: userPoolWebClientId,
+				endpoint: this._config.endpoint,
 				fipsEnabled: this._config.fipsEnabled,
 			};
 			userPoolData.Storage = this._storage;
