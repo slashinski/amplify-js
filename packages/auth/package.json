@@ -9,7 +9,8 @@
     "./index": "./lib/index.js"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry":"git+https://github.com/slashinski/amplify-js.git#fips"
   },
   "scripts": {
     "test": "tslint 'src/**/*.ts' && jest -w 1 --coverage",
