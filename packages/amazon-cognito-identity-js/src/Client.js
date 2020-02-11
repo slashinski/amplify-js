@@ -15,6 +15,7 @@ export default class Client {
 				endpoint || `https://cognito-idp.${region}.amazonaws.com/`;
 		}
 
+		console.log('COGNITO ENDPOINT: ', this.endpoint);
 		this.userAgent = UserAgent.prototype.userAgent || 'aws-amplify/0.1.x js';
 	}
 

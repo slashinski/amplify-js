@@ -37,7 +37,7 @@ export default class CognitoUserPool {
 			UserPoolId,
 			ClientId,
 			endpoint,
-			fipEnabled,
+			fipsEnabled,
 			AdvancedSecurityDataCollectionFlag,
 		} = data || {};
 		if (!UserPoolId || !ClientId) {
@@ -51,7 +51,7 @@ export default class CognitoUserPool {
 		this.userPoolId = UserPoolId;
 		this.clientId = ClientId;
 
-		this.client = new Client(region, endpoint, fipEnabled);
+		this.client = new Client(region, endpoint, fipsEnabled);
 
 		/**
 		 * By default, AdvancedSecurityDataCollectionFlag is set to true,
